@@ -1,0 +1,22 @@
+# The alias table. A person edits this after reading the possible collisions
+# that phase one lists. Nothing here is guessed by the program.
+#
+# aliases:     a canonical name, then the spellings that are the same organisation.
+# keep_apart:  names that look alike once normalised but are different organisations.
+#
+# Spellings are compared after normalisation, so case, punctuation, "&" against
+# "och" and legal suffixes such as AB do not need separate lines.
+#
+# The review screen (leadlist review) writes this file too. When it saves, it
+# keeps every entry and this header, but not other comments added by hand.
+
+aliases:
+  Drögvågmy Teknik AB:
+  - Drögvågmy
+  Dvälpirpsainstitutet för kustfrågor:
+  - Dvälpirpsainst. för kustfrågor
+  Föreningen Knävdödru:
+  - Knävdödruförbundet
+  Föreningen Kvärpirpsa:
+  - Kvärpirpsaförbundet
+keep_apart: []

@@ -1,0 +1,13 @@
+# Everything the tools generate or write. Run `leadlist demo` to make it.
+work/
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Design working notes, kept local
+PRODUCT.md
+DESIGN.md
+.impeccable/

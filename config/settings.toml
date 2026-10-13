@@ -1,0 +1,33 @@
+# Paths are relative to the folder this file's parent sits in (the project root).
+
+[paths]
+work = "work"                          # everything generated or written lands here
+aliases = "config/org_aliases.yaml"    # the table a person edits
+
+[mock]
+seed = 2026
+events = 300
+host = "127.0.0.1"
+port = 8765
+
+[scrape]
+delay_seconds = 0.0     # raise this before pointing the scraper at a real site
+timeout_seconds = 20
+retries = 3
+
+# Column names in the CRM exports. Change these to read a differently labelled report.
+[crm.meetings]
+file = "meetings_export.xlsx"
+account = "Company / Account"
+contact = "Contact"
+subject = "Subject"
+date = "Date"
+left_tag = "LEFT"       # a contact marked "(LEFT)" or "(LEFT 2024)" is no longer at the organisation
+
+[crm.won]
+file = "won_export.xlsx"
+account = "Account Name"
+source = "Lead Source"
+opportunity = "Opportunity Name"
+amount = "Amount"
+close_date = "Close Date"
